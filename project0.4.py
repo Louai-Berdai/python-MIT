@@ -27,4 +27,6 @@ plt.bar(noms, moyennes, color=couleurs)
 plt.title("Taux de décrochage par secteur - West Island")
 plt.xlabel("Secteur")
 plt.ylabel("Taux de décrochage (%)")
+for i, v in enumerate(moyennes):
+    plt.text(i, v + 0.1, f"{v:.2f}%", ha='center')
 plt.show()
